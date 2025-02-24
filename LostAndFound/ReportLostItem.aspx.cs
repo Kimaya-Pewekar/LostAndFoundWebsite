@@ -38,7 +38,7 @@ namespace LostAndFound
             }
 
             string fileExtension = Path.GetExtension(lostImageUpload.FileName).ToLower();
-            string[] allowedExtensions = { ".jpg", ".jpeg", ".png", ".gif" };
+            string[] allowedExtensions = {".png"};
             string imageUrl = "~/Images/placeholder.png";
             byte[] imageBytes=null;
             if (Array.IndexOf(allowedExtensions, fileExtension) < 0)
