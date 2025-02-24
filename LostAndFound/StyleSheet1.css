@@ -1,0 +1,159 @@
+﻿
+body {
+    background-color: #acf7ff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-height: calc(100vh - navbar height);
+}
+    .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+    width: 90%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, textarea:focus {
+        border-color: #acf7ff;
+}
+
+
+button, .btn {
+    background-color: #00a9c1;
+    color: white;
+    padding: 12px 20px;
+    border: 2px solid #00a9c1;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+    button:hover, .btn:hover {
+        background-color: white;
+        color: #00a9c1;
+        border: 2px solid #00a9c1;
+    }
+
+select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+select:focus {
+    border-color: #acf7ff;
+}
+
+input[type="file"] {
+    padding: 10px;
+    border: 2px dashed #acf7ff;
+    border-radius: 10px;
+    background: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="file"]:hover {
+        border-color: #008c99;
+}
+
+.found-item, .comment {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+a {
+    color: #008c99;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+        text-decoration: underline;
+}
+
+.center {
+    text-align: center;
+}
+nav {
+    background-color: #00a9c1; 
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    padding: 15px 0;
+}
+
+nav ul {
+        list-style: none;
+        display: flex;
+        gap: 30px; 
+        padding: 0;
+        margin: 0;
+}
+
+nav ul li {
+     display: inline-block;
+}
+
+nav ul li a {
+       text-decoration: none;
+       color: white;
+       font-size: 18px;
+       font-weight: bold;
+       padding: 10px 15px;
+       transition: 0.3s ease-in-out;
+
+}
+
+nav ul li a:hover {
+       background-color: white;
+       color: #00a9c1;
+       border-radius: 5px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; 
+    gap: 50px; 
+}
+.dropdown {
+    width: 250px; /* Adjust width as needed */
+    max-width: 100%; /* Prevent it from overflowing */
+    padding: 5px; /* Optional: Improve appearance */
+}
