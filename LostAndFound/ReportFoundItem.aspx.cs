@@ -43,7 +43,7 @@ namespace LostAndFound
             }
 
             string fileExtension = Path.GetExtension(foundImageUpload.FileName).ToLower();
-            string[] allowedExtensions = { ".jpg", ".jpeg", ".png", ".gif" };
+            string[] allowedExtensions = {".png"};
             if (Array.IndexOf(allowedExtensions, fileExtension) < 0)
             {
                 ImageTypeError.Text = "Please upload a valid image file.";
